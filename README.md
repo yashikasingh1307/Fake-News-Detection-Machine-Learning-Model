@@ -10,8 +10,7 @@ attributions fed into an LLM.
 - **Fakeddit** — https://github.com/entitize/Fakeddit
 
 Download each dataset and place the raw files in `data/raw/<dataset_name>/`.
-Raw data is git-ignored — do NOT commit dataset files to GitHub. Share them
-via a Drive link in the team channel instead, and list the link in
+Raw data is git-ignored 
 `data/raw/README.md`.
 
 ## Project structure
