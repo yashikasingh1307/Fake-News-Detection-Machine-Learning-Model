@@ -1,0 +1,12 @@
+{
+  "measured_on": "local CPU/GPU (whatever this machine has)",
+  "benchmark_steps": 20,
+  "seconds_per_step_measured": 4.715,
+  "total_train_rows": 30535,
+  "batch_size": 16,
+  "epochs": 3,
+  "total_steps_full_run": 5724,
+  "estimated_train_runtime_seconds": 26986.4,
+  "estimated_train_runtime_minutes": 449.8,
+  "note": "This is an extrapolated ESTIMATE from a short local benchmark, not the actual measured Colab GPU training time. Colab's T4 GPU is typically faster than a local CPU, so real Colab runtime was likely shorter than this estimate if this ran on CPU."
+}

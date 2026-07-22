@@ -9,8 +9,11 @@ reference sheet) and trains comfortably on a free Colab GPU.
 Run:
     python src/train_transformer.py
 Output:
-    models/transformer/  (fine-tuned model + tokenizer)
-    reports/transformer_eval.json
+    models/transformer/            (fine-tuned model + tokenizer)
+    reports/transformer_eval.json  (test-set accuracy/precision/recall/F1)
+    reports/train_metrics.json     (train_runtime and other training stats
+                                     -- saved explicitly so this is never
+                                     lost even if the console output is)
 """
 
 import os
@@ -100,7 +103,17 @@ def main():
         compute_metrics=compute_metrics,
     )
 
-    trainer.train()
+    train_result = trainer.train()
+
+    # Save training stats (train_runtime, samples/sec, etc.) explicitly to
+    # disk immediately -- don't rely on scrolling back through console
+    # output later, especially important on Colab where sessions can reset.
+    train_metrics = train_result.metrics
+    trainer.log_metrics("train", train_metrics)
+    trainer.save_metrics("train", train_metrics)
+    with open(os.path.join(REPORTS_DIR, "train_metrics.json"), "w") as f:
+        json.dump(train_metrics, f, indent=2)
+    print("Train metrics:", train_metrics)
 
     test_results = trainer.evaluate(test_ds)
     print("Test set results:", test_results)
