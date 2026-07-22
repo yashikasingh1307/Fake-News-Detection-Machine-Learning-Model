@@ -1,0 +1,8 @@
+{
+  "test_set_size": 4331,
+  "total_inference_seconds": 107.952,
+  "avg_latency_ms_per_sample": 24.925,
+  "throughput_samples_per_sec": 40.12,
+  "batch_size_used": 32,
+  "note": "Training wall-clock time should be taken from the 'train_runtime' field Trainer prints during train_transformer.py -- check your Colab run's console output."
+}

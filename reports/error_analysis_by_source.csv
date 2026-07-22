@@ -1,0 +1,4 @@
+source,total,correct_count,error_rate
+fakeddit,3000,2567,0.1443333333333333
+fakenewsnet,64,31,0.515625
+liar,1267,769,0.3930544593528019
