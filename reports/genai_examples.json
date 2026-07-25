@@ -1,0 +1,131 @@
+[
+    {
+        "tag": "clearly_fake",
+        "input_text": "Government secretly controls weather using hidden satellites, insider claims.",
+        "predicted_label": "FAKE",
+        "confidence": 0.8575320839881897,
+        "top_words": [
+            {
+                "word": "Government",
+                "impact": 0.280299762962386
+            },
+            {
+                "word": "claims",
+                "impact": 0.088972098659724
+            },
+            {
+                "word": "weather",
+                "impact": 0.08763640047982335
+            },
+            {
+                "word": "insider",
+                "impact": 0.06788807874545455
+            },
+            {
+                "word": "using",
+                "impact": 0.06637556990608573
+            },
+            {
+                "word": "controls",
+                "impact": 0.05978477094322443
+            },
+            {
+                "word": "secretly",
+                "impact": 0.05256267124786973
+            },
+            {
+                "word": ".",
+                "impact": 0.03608895931392908
+            }
+        ],
+        "exact_prompt_sent": "\nYou are explaining the prediction of a Fake News Detection AI.\n\nPrediction:\nFAKE\n\nConfidence:\n85.75%\n\nNews:\n\nGovernment secretly controls weather using hidden satellites, insider claims.\n\nMost influential words:\n\n- \"Government\" (impact +0.280)\n- \"claims\" (impact +0.089)\n- \"weather\" (impact +0.088)\n- \"insider\" (impact +0.068)\n- \"using\" (impact +0.066)\n- \"controls\" (impact +0.060)\n- \"secretly\" (impact +0.053)\n- \".\" (impact +0.036)\n\nWrite ONLY a concise explanation.\n\nRequirements:\n\n- Exactly 2-3 sentences.\n- Mention the important words naturally.\n- Explain why they influenced the prediction.\n- Don't mention SHAP.\n- Don't mention machine learning.\n- Don't mention AI.\n- Don't add headings.\n- Don't use bullet points.\n- Don't add warnings or disclaimers.\n",
+        "exact_llm_response": "The system predicted this news is FAKE with 85.75% confidence because words like \"Government,\" \"secretly,\" \"controls,\" and \"weather\" often appear in sensationalized or conspiratorial content. The inclusion of \"insider claims\" and \"using\" also contributed to the prediction, as such phrasing frequently accompanies unverified information.",
+        "model_used": "gemini-2.5-flash"
+    },
+    {
+        "tag": "clearly_real",
+        "input_text": "The Federal Reserve raised interest rates by a quarter point on Wednesday.",
+        "predicted_label": "REAL",
+        "confidence": 0.5636018514633179,
+        "top_words": [
+            {
+                "word": "raised",
+                "impact": -0.07347631454467773
+            },
+            {
+                "word": "interest",
+                "impact": -0.05364388786256313
+            },
+            {
+                "word": "point",
+                "impact": -0.05136355618014932
+            },
+            {
+                "word": "Wednesday",
+                "impact": -0.05041760578751564
+            },
+            {
+                "word": "Reserve",
+                "impact": -0.040693169459700584
+            },
+            {
+                "word": "by",
+                "impact": -0.030805718153715134
+            },
+            {
+                "word": "on",
+                "impact": -0.02914983546361327
+            },
+            {
+                "word": "Federal",
+                "impact": -0.026715753600001335
+            }
+        ],
+        "exact_prompt_sent": "\nYou are explaining the prediction of a Fake News Detection AI.\n\nPrediction:\nREAL\n\nConfidence:\n56.36%\n\nNews:\n\nThe Federal Reserve raised interest rates by a quarter point on Wednesday.\n\nMost influential words:\n\n- \"raised\" (impact -0.073)\n- \"interest\" (impact -0.054)\n- \"point\" (impact -0.051)\n- \"Wednesday\" (impact -0.050)\n- \"Reserve\" (impact -0.041)\n- \"by\" (impact -0.031)\n- \"on\" (impact -0.029)\n- \"Federal\" (impact -0.027)\n\nWrite ONLY a concise explanation.\n\nRequirements:\n\n- Exactly 2-3 sentences.\n- Mention the important words naturally.\n- Explain why they influenced the prediction.\n- Don't mention SHAP.\n- Don't mention machine learning.\n- Don't mention AI.\n- Don't add headings.\n- Don't use bullet points.\n- Don't add warnings or disclaimers.\n",
+        "exact_llm_response": "The system predicts this news is likely REAL, with 56.36% confidence. Words like \"raised,\" \"interest,\" \"point,\" and \"Wednesday\" are commonly found in factual financial reporting, suggesting a standard news article about the Federal Reserve's actions. The presence of these specific terms, along with \"by,\" \"on,\" and \"Federal,\" indicates a conventional and verifiable news structure.",
+        "model_used": "gemini-2.5-flash"
+    },
+    {
+        "tag": "borderline",
+        "input_text": "Scientists confirm the moon landing was staged using Hollywood sets.",
+        "predicted_label": "REAL",
+        "confidence": 0.5320464372634888,
+        "top_words": [
+            {
+                "word": "using",
+                "impact": -0.10755291394889355
+            },
+            {
+                "word": "Scientists",
+                "impact": -0.08548070304095745
+            },
+            {
+                "word": ".",
+                "impact": -0.078408382833004
+            },
+            {
+                "word": "confirm",
+                "impact": -0.06770463660359383
+            },
+            {
+                "word": "was",
+                "impact": -0.039116475731134415
+            },
+            {
+                "word": "Hollywood",
+                "impact": -0.035300372168421745
+            },
+            {
+                "word": "moon",
+                "impact": 0.015608536079525948
+            },
+            {
+                "word": "the",
+                "impact": 0.01015574112534523
+            }
+        ],
+        "exact_prompt_sent": "\nYou are explaining the prediction of a Fake News Detection AI.\n\nPrediction:\nREAL\n\nConfidence:\n53.20%\n\nNews:\n\nScientists confirm the moon landing was staged using Hollywood sets.\n\nMost influential words:\n\n- \"using\" (impact -0.108)\n- \"Scientists\" (impact -0.085)\n- \".\" (impact -0.078)\n- \"confirm\" (impact -0.068)\n- \"was\" (impact -0.039)\n- \"Hollywood\" (impact -0.035)\n- \"moon\" (impact +0.016)\n- \"the\" (impact +0.010)\n\nWrite ONLY a concise explanation.\n\nRequirements:\n\n- Exactly 2-3 sentences.\n- Mention the important words naturally.\n- Explain why they influenced the prediction.\n- Don't mention SHAP.\n- Don't mention machine learning.\n- Don't mention AI.\n- Don't add headings.\n- Don't use bullet points.\n- Don't add warnings or disclaimers.\n",
+        "exact_llm_response": "The system predicted this news is REAL with low confidence, primarily because words like \"using,\" \"Scientists,\" \"confirm,\" and \"Hollywood\" were strongly associated with real news in its training data. While the phrase \"moon landing\" typically leans towards fake news, the overall combination of words pushed the prediction slightly towards real.",
+        "model_used": "gemini-2.5-flash"
+    }
+]

@@ -1,0 +1,191 @@
+================================================================================
+Example : clearly_fake
+================================================================================
+Input News:
+Government secretly controls weather using hidden satellites, insider claims.
+
+Prediction : FAKE (85.75%)
+
+Top SHAP Words:
+  Government           +0.2803
+  claims               +0.0890
+  weather              +0.0876
+  insider              +0.0679
+  using                +0.0664
+  controls             +0.0598
+  secretly             +0.0526
+  .                    +0.0361
+
+Prompt Sent To Gemini:
+
+
+You are explaining the prediction of a Fake News Detection AI.
+
+Prediction:
+FAKE
+
+Confidence:
+85.75%
+
+News:
+
+Government secretly controls weather using hidden satellites, insider claims.
+
+Most influential words:
+
+- "Government" (impact +0.280)
+- "claims" (impact +0.089)
+- "weather" (impact +0.088)
+- "insider" (impact +0.068)
+- "using" (impact +0.066)
+- "controls" (impact +0.060)
+- "secretly" (impact +0.053)
+- "." (impact +0.036)
+
+Write ONLY a concise explanation.
+
+Requirements:
+
+- Exactly 2-3 sentences.
+- Mention the important words naturally.
+- Explain why they influenced the prediction.
+- Don't mention SHAP.
+- Don't mention machine learning.
+- Don't mention AI.
+- Don't add headings.
+- Don't use bullet points.
+- Don't add warnings or disclaimers.
+
+
+Gemini Response:
+
+The system predicted this news is FAKE with 85.75% confidence because words like "Government," "secretly," "controls," and "weather" often appear in sensationalized or conspiratorial content. The inclusion of "insider claims" and "using" also contributed to the prediction, as such phrasing frequently accompanies unverified information.
+
+
+================================================================================
+Example : clearly_real
+================================================================================
+Input News:
+The Federal Reserve raised interest rates by a quarter point on Wednesday.
+
+Prediction : REAL (56.36%)
+
+Top SHAP Words:
+  raised               -0.0735
+  interest             -0.0536
+  point                -0.0514
+  Wednesday            -0.0504
+  Reserve              -0.0407
+  by                   -0.0308
+  on                   -0.0291
+  Federal              -0.0267
+
+Prompt Sent To Gemini:
+
+
+You are explaining the prediction of a Fake News Detection AI.
+
+Prediction:
+REAL
+
+Confidence:
+56.36%
+
+News:
+
+The Federal Reserve raised interest rates by a quarter point on Wednesday.
+
+Most influential words:
+
+- "raised" (impact -0.073)
+- "interest" (impact -0.054)
+- "point" (impact -0.051)
+- "Wednesday" (impact -0.050)
+- "Reserve" (impact -0.041)
+- "by" (impact -0.031)
+- "on" (impact -0.029)
+- "Federal" (impact -0.027)
+
+Write ONLY a concise explanation.
+
+Requirements:
+
+- Exactly 2-3 sentences.
+- Mention the important words naturally.
+- Explain why they influenced the prediction.
+- Don't mention SHAP.
+- Don't mention machine learning.
+- Don't mention AI.
+- Don't add headings.
+- Don't use bullet points.
+- Don't add warnings or disclaimers.
+
+
+Gemini Response:
+
+The system predicts this news is likely REAL, with 56.36% confidence. Words like "raised," "interest," "point," and "Wednesday" are commonly found in factual financial reporting, suggesting a standard news article about the Federal Reserve's actions. The presence of these specific terms, along with "by," "on," and "Federal," indicates a conventional and verifiable news structure.
+
+
+================================================================================
+Example : borderline
+================================================================================
+Input News:
+Scientists confirm the moon landing was staged using Hollywood sets.
+
+Prediction : REAL (53.20%)
+
+Top SHAP Words:
+  using                -0.1076
+  Scientists           -0.0855
+  .                    -0.0784
+  confirm              -0.0677
+  was                  -0.0391
+  Hollywood            -0.0353
+  moon                 +0.0156
+  the                  +0.0102
+
+Prompt Sent To Gemini:
+
+
+You are explaining the prediction of a Fake News Detection AI.
+
+Prediction:
+REAL
+
+Confidence:
+53.20%
+
+News:
+
+Scientists confirm the moon landing was staged using Hollywood sets.
+
+Most influential words:
+
+- "using" (impact -0.108)
+- "Scientists" (impact -0.085)
+- "." (impact -0.078)
+- "confirm" (impact -0.068)
+- "was" (impact -0.039)
+- "Hollywood" (impact -0.035)
+- "moon" (impact +0.016)
+- "the" (impact +0.010)
+
+Write ONLY a concise explanation.
+
+Requirements:
+
+- Exactly 2-3 sentences.
+- Mention the important words naturally.
+- Explain why they influenced the prediction.
+- Don't mention SHAP.
+- Don't mention machine learning.
+- Don't mention AI.
+- Don't add headings.
+- Don't use bullet points.
+- Don't add warnings or disclaimers.
+
+
+Gemini Response:
+
+The system predicted this news is REAL with low confidence, primarily because words like "using," "Scientists," "confirm," and "Hollywood" were strongly associated with real news in its training data. While the phrase "moon landing" typically leans towards fake news, the overall combination of words pushed the prediction slightly towards real.
+

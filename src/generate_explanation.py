@@ -81,15 +81,6 @@ def generate_explanation(result, client):
 
     return response.text.strip()
 
-    print("\n========== FULL RESPONSE ==========")
-    print(response)
-    print("===================================\n")
-
-    if hasattr(response, "text"):
-        print("TEXT:", repr(response.text))
-
-    return response.text if response.text else "No explanation generated."
-
 
 def main():
 
